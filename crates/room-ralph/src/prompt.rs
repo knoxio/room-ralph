@@ -79,10 +79,10 @@ pub fn build_prompt(config: &PromptConfig<'_>, messages: &[Message]) -> String {
         );
         prompt.push_str("- Your identity comes from THIS prompt, not from CLAUDE.md\n\n");
         prompt.push_str("Rules:\n");
-        prompt.push_str("- Announce your plan before writing code\n");
-        prompt.push_str("- One concern per PR\n");
-        prompt.push_str("- Run scripts/pre-push.sh before pushing\n");
-        prompt.push_str("- Check room assignments before committing fixes\n");
+        prompt.push_str("- Announce your plan in the room before starting work\n");
+        prompt.push_str("- One concern per PR — keep changes small and focused\n");
+        prompt.push_str("- Run the project's test suite and linter before pushing\n");
+        prompt.push_str("- Check the taskboard and room for assignments before picking up work\n");
         prompt.push_str(&format!(
             "- Write progress to {} at each milestone\n\n",
             config.progress_file.display()
