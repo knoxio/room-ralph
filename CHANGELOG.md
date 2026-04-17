@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+
+- Personality prompts are now language-agnostic — removed project-specific
+  references (Cargo, Rust) so prompts work across any tech stack.
+- Added structured workflow steps to coder, reviewer, and coordinator
+  personalities.
+- Coordinator personality now supports agent self-assignment from taskboard.
+- Expanded coder tool profile to cover npm/pnpm/yarn/python/pip/make alongside
+  cargo/git/gh.
+- Default prompt rules now reference the project test suite generically instead
+  of hardcoding cargo commands.
+
 ## [3.5.1] - 2026-03-16
 
 ### Fixed

@@ -1,6 +1,6 @@
 [package]
 name = "room-ralph"
-version = "3.5.1"
+version = "3.6.0"
 edition = "2021"
 description = "Autonomous agent wrapper for room — runs claude -p with auto-restart on context exhaustion"
 license = "MIT"
